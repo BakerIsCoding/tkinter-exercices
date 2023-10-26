@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 
 root = tk.Tk()
 os.chdir("images")
-root.iconbitmap("favicon.ico")
+root.iconbitmap("favicon.ico") #En el caso que utilizes linux esto no funcionará
 root.resizable(False,False)
 root.configure(background='Teal')
 
