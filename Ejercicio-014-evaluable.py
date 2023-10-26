@@ -1,13 +1,15 @@
 from tkinter import ttk
 import tkinter as tk
+import os
 from PIL import Image, ImageTk
 
 root = tk.Tk()
-root.iconbitmap("images//favicon.ico")
+os.chdir("images")
+root.iconbitmap("favicon.ico")
 root.resizable(False,False)
 root.configure(background='Teal')
 
-imageList = ["images//random1.jpg","images//random2.jpg","images//random3.jpg","images//random4.jpg","images//random5.jpg"]
+imageList = ["random1.jpg","random2.jpg","random3.jpg","random4.jpg","random5.jpg"]
 currentImg = 0
 
 im = ImageTk.PhotoImage(Image.open(imageList[0]))
